@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="\PETER-UNIVERSITY-RESULT-PORTAL\BUILDING SMALL\form\style.css">
+</head>
+<body>
+    <form>
+        <div class="form-group">
+            <img
+          src="\PETER-UNIVERSITY-RESULT-PORTAL\BUILDING SMALL\form\image.png"
+          alt="PUNI-Logo"
+          class="nav-image"
+        />
+            <label for="regno">REG NO:</label>
+            <input 
+  type="text" 
+  id="regno" 
+  inputmode="numeric" 
+  pattern="[0-9]{7}" 
+  maxlength="7" 
+  required 
+    oninput="this.value = this.value.replace(/[^0-9]/g, ''); /* If you want to immediately delete any non-numeric letters a user tries to paste or type, add an oninput listener:*/"   
+  title="Please enter exactly 7 numbers.">
+        </div>
+        <a href="#" class="btn">Open result</a>
+        <div class="😅">
+            <h3>Please provide the first seven digit of your registration number - 20******</h3>
+        </div>
+
+    </form>
+    
+</body>
+</html>

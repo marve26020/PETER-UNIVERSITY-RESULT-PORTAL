@@ -1,0 +1,100 @@
+body{
+    /* Combines red and blue evenly to create purple */
+/* background-color: color-mix(in srgb, rgb(27, 4, 4), rgb(134, 84, 75)); */
+ background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border:3px solid #D4AF37;   
+
+}
+/* body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+} */
+
+/* html {
+  height: 100%;
+} */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    gap: 8px;
+    padding: 50px 10px 50px 10px;
+    border-radius: 40px;
+    background-color:  rgba(156, 152, 151, 0.247) ;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    /* border: 2px solid black; */
+    font-size: 14px;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
+}
+.form-group{
+    /* border: 2px dotted red; */
+   
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+    
+}
+
+img.nav-image {
+   height: 40px;
+  width: auto;
+  margin-bottom: 15px; /* Adds space below the image */
+}
+.😅{
+    text-align: center;
+}
+label{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+/* Target text-based inputs directly */
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+textarea {
+  width: 100%;                  /* Ensures responsiveness across devices */
+  padding: 12px 16px;           /* Gives comfortable room for touch targets */
+  font-family: inherit;         /* Forces inputs to inherit main document fonts */
+  font-size: 1rem;              /* Prevents automatic iOS page zooming */
+  color: #333333;
+  background-color: #ffffff;
+  border: 1.5px solid #cccccc;  /* Subtle, clear boundaries */
+  border-radius: 6px;           /* Modern rounded look */
+  box-sizing: border-box;       /* Includes padding in total width calculations */
+  transition: all 0.3s ease;    /* Smooth hover and focus animations */
+}
+.btn{
+     display: inline-block;
+    padding: 8px;
+    background-color:rgb(16, 3, 94);
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+
+    /* chrome changes */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Prepares the transform and shadow for animation */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}

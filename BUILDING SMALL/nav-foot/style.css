@@ -1,0 +1,65 @@
+/* !!!a lot WILL STILL BE CHANGED!!! */
+body {
+  margin: 0;
+  min-height: 100dvh; /* Spans the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Tells the main content to grow and fill empty space */
+}
+
+
+img {
+  height: 40px;
+  width: auto;
+}
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px 0 50px;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+.nav ul {
+  display: flex;       /* Aligns items side-by-side */
+  list-style: none;    /* Removes bullets */
+  padding: 0;          /* Removes default padding */
+  margin: 0;
+  gap: 20px;           /* Adds space between links */
+}
+.nav ul a {
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: small;
+}
+.nav ul a:hover,
+.nav ul a:focus-visible{
+    color: aqua;
+}
+
+.footer{
+    
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      /* Slightly smaller than standard body text (usually 16px) */
+  font-size: 0.875rem; /* Evaluates to 14px */
+  
+  /* Increased line height prevents dense text lines from crashing */
+  line-height: 1.6;
+  
+  /* Lighter font weights keep small text crisp and readable */
+  font-weight: 400;
+  
+  /* Adding slight spacing improves the readability of small link lists */
+  letter-spacing: 0.02em;
+  
+  /* Colors should have enough contrast against the footer background */
+  color: #64748b;
+  text-align: center;
+  margin-top: auto;
+}
